@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>redirect test</title>
+    <link href="/blog/https://www.baidu.com"/>
+    <url>/blog/https://www.baidu.com</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>new post</title>
     <link href="/blog/2023/04/23/new-post/"/>
     <url>/blog/2023/04/23/new-post/</url>
