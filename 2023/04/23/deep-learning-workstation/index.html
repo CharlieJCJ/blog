@@ -16,21 +16,25 @@
   <meta name="author" content="Charlie Cheng-Jie Ji">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="redirect test">
+    <meta name="description" content="Motivation:not rely on any lab’s computing resource, learn &amp; experiment with public deep learning repos. I can’t replicate the results on my XPS 15 RTX 3050TI 4GB GPU, which forces me">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build a deep-learning workstation">
 <meta property="og:url" content="https://charliejcj.github.io/blog/2023/04/23/deep-learning-workstation/index.html">
 <meta property="og:site_name" content="CJI Blog">
+<meta property="og:description" content="Motivation:not rely on any lab’s computing resource, learn &amp; experiment with public deep learning repos. I can’t replicate the results on my XPS 15 RTX 3050TI 4GB GPU, which forces me">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://charliejcj.github.io/blog/img/3060.png">
 <meta property="article:published_time" content="2023-04-23T09:37:34.000Z">
-<meta property="article:modified_time" content="2023-04-23T09:46:27.194Z">
+<meta property="article:modified_time" content="2023-04-27T05:43:35.662Z">
 <meta property="article:author" content="Charlie Cheng-Jie Ji">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://charliejcj.github.io/blog/img/3060.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>redirect test - CJI Blog</title>
+  <title>Build a deep-learning workstation - CJI Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -211,7 +215,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="redirect test"></span>
+            <span id="subtitle" data-typed-text="Build a deep-learning workstation"></span>
           
         </div>
 
@@ -234,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 words
+          1.9k words
         
       </span>
     
@@ -245,7 +249,7 @@
         
         
         
-          1 mins
+          17 mins
         
       </span>
     
@@ -291,12 +295,55 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">redirect test</h1>
+            <h1 style="display: none">Build a deep-learning workstation</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <div class="note note-primary">
+            <p><strong>Motivation</strong>:<br>not rely on any lab’s computing resource, <strong>learn &amp; experiment with</strong> public deep learning repos. I can’t replicate the results on my XPS 15 RTX 3050TI 4GB GPU, which forces me to look at other resources. Looking at the pricing and setup needed to work with cloud computing, I found better returns by building my own deep-learning workstation. Trying and replicating the results of these repos are absolutely important for learning and creativity. Crazy GPU Speed isn’t my focus at the moment, but large GPU mem is the key. 3060 seems to be the most price efficient one in the market at this point.</p>
+          </div>
+<p><img src="/blog/img/3060.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/blog/img/3060_2.png" srcset="/blog/img/loading.gif" lazyload></p>
+<h1 id="Videos-referenced"><a href="#Videos-referenced" class="headerlink" title="Videos referenced:"></a>Videos referenced:</h1><p>Which GPU to choose for deep learning?</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=F1ythHjdWI0">How to Choose an NVIDIA GPU for Deep Learning in 2023: Ada, Ampere, GeForce, NVIDIA RTX Compared</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=OWvy-fCWTBQ">How to Build a Deep Learning Machine - Everything You Need To Know</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=XIHG11EzB28">How to Assemble a Deep Learning Machine - Full Process | Part 2</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ttxtV966jyQ">How To Install CUDA, cuDNN, Ubuntu, Miniconda | ML Software Stack | Part 3&#x2F;3</a></p>
+<h2 id="Optional-Article-references"><a href="#Optional-Article-references" class="headerlink" title="(Optional) Article references"></a>(Optional) Article references</h2><p><a target="_blank" rel="noopener" href="https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/#">which-gpu-for-deep-learning</a></p>
+<p><a target="_blank" rel="noopener" href="https://timdettmers.com/2018/12/16/deep-learning-hardware-guide/">deep-learning-hardware-guide</a></p>
+<h1 id="Specs-of-my-machine-for-replication-purpose"><a href="#Specs-of-my-machine-for-replication-purpose" class="headerlink" title="Specs of my machine (for replication purpose):"></a>Specs of my machine (for replication purpose):</h1><div class="note note-info">
+            <p><strong>Price</strong>: $924.99<br><strong>CPU</strong>: AMD Ryzen 7-5800<br><strong>Memory:</strong> 16GB<br><strong>GPU:</strong> NVIDIA GeForce RTX 3060 12GB<br><strong>SSD:</strong> 1TB (Samsung 970 evo plus) +$69.99</p>
+          </div>
+
+<p><a target="_blank" rel="noopener" href="https://www.bestbuy.com/site/lenovo-legion-tower-5-amd-gaming-desktop-amd-ryzen-7-5800-16gb-memory-nvidia-geforce-rtx-3060-256gb-ssd-1tb-hdd-raven-black/6501812.p?skuId=6501812"></a></p>
+<div class="note note-info">
+            <p>🔗 Follow this video for in-depth environment installation instruction <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ttxtV966jyQ">How To Install CUDA, cuDNN, Ubuntu, Miniconda | ML Software Stack | Part 3&#x2F;3</a></p>
+          </div>
+
+<div class="note note-info">
+            <p>📘 Official documentation referenced from <code>How To Install CUDA, cuDNN, Ubuntu, Miniconda | ML Software Stack | Part 3/3</code></p>
+          </div>
+
+<ol>
+<li><p>✅ <a target="_blank" rel="noopener" href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview">Ubuntu installation</a></p>
+</li>
+<li><p>✅ <a target="_blank" rel="noopener" href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">CUDA installation</a></p>
+</li>
+<li><p>✅ <a target="_blank" rel="noopener" href="https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html">cuDNN installation</a></p>
+</li>
+</ol>
+<h1 id="SSH-ing"><a href="#SSH-ing" class="headerlink" title="SSH-ing"></a>SSH-ing</h1><h2 id="Step-1-Step-up-ssh-from-remote-laptops-e-g-mac-x2F-windows-to-Ubuntu-within-LAN"><a href="#Step-1-Step-up-ssh-from-remote-laptops-e-g-mac-x2F-windows-to-Ubuntu-within-LAN" class="headerlink" title="Step 1: Step up ssh from remote laptops (e.g. mac&#x2F;windows) to Ubuntu within LAN"></a>Step 1: Step up ssh from remote laptops (e.g. mac&#x2F;windows) to Ubuntu <em>within LAN</em></h2><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Wlmne44M6fQ&t=1s">How to enable SSH on Linux Ubuntu (Easy step by step guide)</a></p>
+<h2 id="Step-2-Step-up-ssh-port-forwarding-to-connect-from-any-network-through-remote-laptops-e-g-mac-x2F-windows-to-Ubuntu"><a href="#Step-2-Step-up-ssh-port-forwarding-to-connect-from-any-network-through-remote-laptops-e-g-mac-x2F-windows-to-Ubuntu" class="headerlink" title="Step 2: Step up ssh port forwarding to connect from any network through remote laptops (e.g. mac&#x2F;windows) to Ubuntu"></a>Step 2: Step up ssh port forwarding to connect from any network through remote laptops (e.g. mac&#x2F;windows) to Ubuntu</h2><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/zvideo/1621515254902521856">windows 系统如何通过 ssh 远程连接 linux？ - 知乎</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cpolar.com/">cpolar - 安全的内网穿透工具</a></p>
+<blockquote>
+<p>I used the free account that fulfills my personal usage and need. Works perfectly at the moment. There can be other cleaner approaches, but I haven’t find such one. Please send me a message if you found one.</p>
+</blockquote>
+<h2 id="Step-3-passwordless-login-instructions"><a href="#Step-3-passwordless-login-instructions" class="headerlink" title="Step 3: passwordless login instructions"></a>Step 3: passwordless login instructions</h2><p><a target="_blank" rel="noopener" href="https://levelup.gitconnected.com/how-to-connect-without-password-using-ssh-passwordless-9b8963c828e8">How to connect without password using SSH (passwordless)</a></p>
+<div class="note note-secondary">
+            <p>Thanks for reading, if you have any questions&#x2F;suggestions, please leave a comment below.</p>
+          </div>
+
                 
               </div>
             
@@ -313,7 +360,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>redirect test</div>
+      <div>Build a deep-learning workstation</div>
       <div>https://charliejcj.github.io/blog/2023/04/23/deep-learning-workstation/</div>
     </div>
     <div class="license-meta">
@@ -361,12 +408,6 @@
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/blog/2023/04/23/new-post/" title="new post">
-                        <span class="hidden-mobile">new post</span>
-                        <span class="visible-mobile">Next</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
