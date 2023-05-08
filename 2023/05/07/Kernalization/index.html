@@ -16,26 +16,43 @@
   <meta name="author" content="Charlie Cheng-Jie Ji">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Notion Blog Post Link &lt;- Click Here!              Checkout the Notion Blog in the Title!">
+    <meta name="description" content="CS 189 Lecture 16: Kernelization  💡 **Motivation**: with d input features, degree-p polynomials blow up to $O(d^p)$ features.  weights can be written as a linear combo of sample pts we can use the in">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AI generated images literature review">
-<meta property="og:url" content="https://charliejcj.github.io/blog/2023/05/06/aigc-literature-review/index.html">
+<meta property="og:title" content="Kernalization">
+<meta property="og:url" content="https://charliejcj.github.io/blog/2023/05/07/Kernalization/index.html">
 <meta property="og:site_name" content="CJI Blog">
-<meta property="og:description" content="Notion Blog Post Link &lt;- Click Here!              Checkout the Notion Blog in the Title!">
+<meta property="og:description" content="CS 189 Lecture 16: Kernelization  💡 **Motivation**: with d input features, degree-p polynomials blow up to $O(d^p)$ features.  weights can be written as a linear combo of sample pts we can use the in">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://charliejcj.github.io/blog/img/ai_art.jpeg">
-<meta property="article:published_time" content="2023-05-06T22:29:07.000Z">
-<meta property="article:modified_time" content="2023-05-08T02:37:35.760Z">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/B4sFfat2QlIgVMz.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/6rfMFUOkazKV142.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/EZPRqB83f42XtVG.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/2pfH5bglDLPBhYQ.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/INUSFaqKTvZrcm6.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/xUd7Pq8SFu1W4Hi.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/ECvBDhFUb6ey2ft.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/9nC2oNadf1BblJw.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/oP1LcDukA5JdYg8.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/qAVdG42CUphO1zi.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/3smMYhE6nG4y5JF.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/Zchr3goaLBRQs2O.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/9lWrIO7FMu6zdn2.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/qdZDk23jS7zEQNp.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/6CpQ4D1gtJ7Eima.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/b1MJdZ3VFrIP6YK.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/fkIWSrO4y26GnYA.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/vg6LBriAox9wd7F.png">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/5qlmchoiZjbAIDN.png">
+<meta property="article:published_time" content="2023-05-08T05:29:18.000Z">
+<meta property="article:modified_time" content="2023-05-08T05:35:41.746Z">
 <meta property="article:author" content="Charlie Cheng-Jie Ji">
-<meta property="article:tag" content="aigc">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://charliejcj.github.io/blog/img/ai_art.jpeg">
+<meta name="twitter:image" content="https://s2.loli.net/2023/05/08/B4sFfat2QlIgVMz.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>AI generated images literature review - CJI Blog</title>
+  <title>Kernalization - CJI Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,7 +245,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="AI generated images literature review"></span>
+            <span id="subtitle" data-typed-text="Kernalization"></span>
           
         </div>
 
@@ -239,8 +256,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-06 15:29" pubdate>
-          May 6, 2023 pm
+        <time datetime="2023-05-07 22:29" pubdate>
+          May 7, 2023 pm
         </time>
       </span>
     
@@ -251,7 +268,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          65 words
+          2k words
         
       </span>
     
@@ -262,7 +279,7 @@
         
         
         
-          1 mins
+          17 mins
         
       </span>
     
@@ -308,16 +325,89 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">AI generated images literature review</h1>
+            <h1 style="display: none">Kernalization</h1>
             
             
               <div class="markdown-body">
                 
-                <h1><a target="_blank" rel="noopener" href="https://bold-tortellini-108.notion.site/Literature-Review-AI-61a89e4b56fc4a4e899aa387c6b05c91">Notion Blog Post Link &lt;- Click Here!</a></h1>
-<div class="note note-warning">
-            <p>Checkout the Notion Blog in the Title!</p>
-          </div>
-<p><img src="https://cdn.arstechnica.net/wp-content/uploads/2022/09/ai_art_on_shutterstock_hero.jpg" srcset="/blog/img/loading.gif" lazyload alt=""></p>
+                <h1>CS 189 Lecture 16: Kernelization</h1>
+<aside>
+💡 **Motivation**: with d input features, degree-p polynomials blow up to $O(d^p)$ features.
+<ul>
+<li>weights can be written as a linear combo of sample pts</li>
+<li>we can use the inner product of $\Phi(x)$ only</li>
+</ul>
+</aside>
+<h1>1. Kernal Ridge</h1>
+<p>Step 1: preprocess</p>
+<p><img src="https://s2.loli.net/2023/05/08/B4sFfat2QlIgVMz.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled.png"></p>
+<p><img src="https://s2.loli.net/2023/05/08/6rfMFUOkazKV142.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 1.png"></p>
+<p>We don’t have $(X^T X+\lambda I’)w$ because of a justification, we need w be a linear combination of sample points.</p>
+<p><img src="https://s2.loli.net/2023/05/08/EZPRqB83f42XtVG.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 2.png"></p>
+<p><img src="https://s2.loli.net/2023/05/08/2pfH5bglDLPBhYQ.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 3.png"></p>
+<h2 id="1-1-Kernel">1.1 Kernel</h2>
+<blockquote>
+<p>和之前完全一样的 formulation，只是我们把换了一个 notation，introduce 了 kernel，之后我们会换别的 kernel function。</p>
+</blockquote>
+<p>$k(x,z)=x^Tz$ be a kernel fn.</p>
+<p>Let $K = XX^T$ be a nxn kernel matrix, $K$ is the kernel matrix</p>
+<p>$K_{ij} = k(X_i, X_j)$</p>
+<p><img src="https://s2.loli.net/2023/05/08/INUSFaqKTvZrcm6.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 4.png"></p>
+<p><img src="https://s2.loli.net/2023/05/08/xUd7Pq8SFu1W4Hi.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 5.png"></p>
+<ul>
+<li>comparison of runtime between dual and primal problems.</li>
+</ul>
+<h2 id="1-2-The-Kernel-Trick-kernelization">1.2 The Kernel Trick (kernelization)</h2>
+<p><img src="https://s2.loli.net/2023/05/08/ECvBDhFUb6ey2ft.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 6.png"></p>
+<p>The factor of $\sqrt 2$ doesn’t matter that much in practice.</p>
+<p>$\Phi(x)$, $\Phi (z)$ are vectors, they are defined symbolically.</p>
+<p>!! don’t compute $\Phi(x)$ or $\Phi(z)$, compute $k(x, z)=(x^Tz+1)^p$</p>
+<p><img src="https://s2.loli.net/2023/05/08/9nC2oNadf1BblJw.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 7.png"></p>
+<ul>
+<li>The running time is sublinear, actually much smaller than linear, in the length of the $\Phi$ vectors.</li>
+</ul>
+<h1>2. Kernel Perceptrons</h1>
+<h2 id="2-1-Original-Perceptron-formulation">2.1. Original Perceptron formulation:</h2>
+<p><img src="https://s2.loli.net/2023/05/08/oP1LcDukA5JdYg8.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 8.png"></p>
+<p><img src="https://s2.loli.net/2023/05/08/qAVdG42CUphO1zi.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 9.png"></p>
+<ol>
+<li>Initialize $w$</li>
+<li>Uses stochastic gradient descent
+<ol>
+<li>use gradients of the misclassified points to do gradient descents</li>
+<li>gradient is $-y_i\Phi(X_i)$</li>
+<li>so, we do this update $w \leftarrow w+\epsilon y_i\Phi(X_i)$ since $-(-…)=+…$</li>
+</ol>
+</li>
+<li>On testing, since perceptron is doing $sign(X_i\cdot w)= class$</li>
+</ol>
+<h2 id="2-2-Dualized-version">2.2. Dualized version</h2>
+<p>Let $\Phi(X)$ be $n\times D$ matrix with rows $\Phi(X_i)^T$, $D=$ length of $\Phi(.)$, $K=\Phi(X)\Phi(X)^T$</p>
+<p><img src="https://s2.loli.net/2023/05/08/3smMYhE6nG4y5JF.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 10.png"></p>
+<p><img src="https://s2.loli.net/2023/05/08/Zchr3goaLBRQs2O.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 11.png"></p>
+<p><img src="https://s2.loli.net/2023/05/08/9lWrIO7FMu6zdn2.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 12.png"></p>
+<h1>3. Kernel Logistic Regression</h1>
+<p><img src="https://s2.loli.net/2023/05/08/qdZDk23jS7zEQNp.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 13.png"></p>
+<h1>4. Gaussian Kernel (let D be infinite dimension)</h1>
+<p><img src="https://s2.loli.net/2023/05/08/6CpQ4D1gtJ7Eima.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 14.png"></p>
+<p>We can inspect what the $\Phi(x)$ is, but we don’t use it in practice</p>
+<p><img src="https://s2.loli.net/2023/05/08/b1MJdZ3VFrIP6YK.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 15.png"></p>
+<aside>
+💡 It’s best ******not****** to think of points in a high-d space. It’s no longer a useful intuition. Instead, think of the kernel $k$ as a measure of how similar or close together two points
+</aside>
+<p>Referencing back to the <strong>dual ridge regression</strong>, now the $h(z)$ in test time is a linear combination of Gaussians centered at x. $h(z)=\sum_{j=1}^na_j\cdot k(X_j,z)$ ← dual weights are the coefficients</p>
+<p><img src="https://s2.loli.net/2023/05/08/fkIWSrO4y26GnYA.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 16.png"></p>
+<ul>
+<li>Intuition from Gaussian kernel function (a measure of similarity)<br>
+<img src="https://s2.loli.net/2023/05/08/vg6LBriAox9wd7F.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 17.png"></li>
+</ul>
+<p>The Gaussian kernel is very popular in practice</p>
+<p><img src="https://s2.loli.net/2023/05/08/5qlmchoiZjbAIDN.png" srcset="/blog/img/loading.gif" lazyload alt="Untitled 18.png"></p>
+<aside>
+💡 Note: we treat $\sigma$ in kernel function as a hyper-parameter. 
+Larger $\sigma$ → wider Gaussians & smoother $h$ → more bias & less variance.
+</aside>
+<p>A function is qualified to be a kernel function only if it always generates a PSD kernel matrix for every sample.</p>
 
                 
               </div>
@@ -327,13 +417,6 @@
               <div class="post-metas my-3">
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/blog/tags/aigc/">#aigc</a>
-      
-    </div>
-  
 </div>
 
 
@@ -342,8 +425,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>AI generated images literature review</div>
-      <div>https://charliejcj.github.io/blog/2023/05/06/aigc-literature-review/</div>
+      <div>Kernalization</div>
+      <div>https://charliejcj.github.io/blog/2023/05/07/Kernalization/</div>
     </div>
     <div class="license-meta">
       
@@ -355,7 +438,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>May 6, 2023</div>
+          <div>May 7, 2023</div>
         </div>
       
       
@@ -387,18 +470,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/2023/05/07/learning-theory/" title="Intro to Learning Theory">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Intro to Learning Theory</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/2023/04/23/deep-learning-workstation/" title="Build a deep-learning workstation">
-                        <span class="hidden-mobile">Build a deep-learning workstation</span>
+                      <a href="/blog/2023/05/07/learning-theory/" title="Intro to Learning Theory">
+                        <span class="hidden-mobile">Intro to Learning Theory</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
