@@ -16,16 +16,16 @@
   <meta name="author" content="Charlie Cheng-Jie Ji">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Motivation:not rely on any lab’s computing resource, learn &amp; experiment with public deep learning repos. I can’t replicate the results on my XPS 15 RTX 3050TI 4GB GPU, which forces me">
+    <meta name="description" content="Build a deep-learning workstation               Motivation:not rely on any lab’s computing resource, learn &amp; experiment with public deep learning repos. I can’t replicate the results on my XPS 15">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Build a deep-learning workstation">
 <meta property="og:url" content="https://charliejcj.github.io/blog/2023/04/23/deep-learning-workstation/index.html">
 <meta property="og:site_name" content="CJI Blog">
-<meta property="og:description" content="Motivation:not rely on any lab’s computing resource, learn &amp; experiment with public deep learning repos. I can’t replicate the results on my XPS 15 RTX 3050TI 4GB GPU, which forces me">
+<meta property="og:description" content="Build a deep-learning workstation               Motivation:not rely on any lab’s computing resource, learn &amp; experiment with public deep learning repos. I can’t replicate the results on my XPS 15">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://charliejcj.github.io/blog/img/3060.png">
 <meta property="article:published_time" content="2023-04-23T09:37:34.000Z">
-<meta property="article:modified_time" content="2023-05-08T02:27:29.797Z">
+<meta property="article:modified_time" content="2023-05-08T05:52:12.655Z">
 <meta property="article:author" content="Charlie Cheng-Jie Ji">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://charliejcj.github.io/blog/img/3060.png">
@@ -261,7 +261,7 @@
         
         
         
-          16 mins
+          17 mins
         
       </span>
     
@@ -312,21 +312,23 @@
             
               <div class="markdown-body">
                 
-                <div class="note note-primary">
+                <h1>Build a deep-learning workstation</h1>
+<!-- toc -->
+<div class="note note-primary">
             <p><strong>Motivation</strong>:<br>not rely on any lab’s computing resource, <strong>learn &amp; experiment with</strong> public deep learning repos. I can’t replicate the results on my XPS 15 RTX 3050TI 4GB GPU, which forces me to look at other resources. Looking at the pricing and setup needed to work with cloud computing, I found better returns by building my own deep-learning workstation. Trying and replicating the results of these repos are absolutely important for learning and creativity. Crazy GPU Speed isn’t my focus at the moment, but large GPU mem is the key. 3060 seems to be the most price efficient one in the market at this point.</p>
           </div>
 <p><img src="https://s2.loli.net/2023/05/08/kfaZXiT4WUlRFr7.jpg" srcset="/blog/img/loading.gif" lazyload alt=""><br>
 <img src="https://s2.loli.net/2023/05/08/NQOLasbGrAmSy5u.jpg" srcset="/blog/img/loading.gif" lazyload alt=""></p>
-<h1>Videos referenced:</h1>
+<h2 id="Videos-referenced">Videos referenced:</h2>
 <p>Which GPU to choose for deep learning?</p>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=F1ythHjdWI0">How to Choose an NVIDIA GPU for Deep Learning in 2023: Ada, Ampere, GeForce, NVIDIA RTX Compared</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=OWvy-fCWTBQ">How to Build a Deep Learning Machine - Everything You Need To Know</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=XIHG11EzB28">How to Assemble a Deep Learning Machine - Full Process | Part 2</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ttxtV966jyQ">How To Install CUDA, cuDNN, Ubuntu, Miniconda | ML Software Stack | Part 3/3</a></p>
-<h2 id="Optional-Article-references">(Optional) Article references</h2>
+<h3 id="Optional-Article-references">(Optional) Article references</h3>
 <p><a target="_blank" rel="noopener" href="https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/#">which-gpu-for-deep-learning</a></p>
 <p><a target="_blank" rel="noopener" href="https://timdettmers.com/2018/12/16/deep-learning-hardware-guide/">deep-learning-hardware-guide</a></p>
-<h1>Specs of my machine (for replication purpose):</h1>
+<h2 id="Specs-of-my-machine-for-replication-purpose">Specs of my machine (for replication purpose):</h2>
 <div class="note note-info">
             <p><strong>Price</strong>: $924.99<br><strong>CPU</strong>: AMD Ryzen 7-5800<br><strong>Memory:</strong> 16GB<br><strong>GPU:</strong> NVIDIA GeForce RTX 3060 12GB<br><strong>SSD:</strong> 1TB (Samsung 970 evo plus) +$69.99</p>
           </div>
@@ -349,15 +351,15 @@
 </li>
 </ol>
 <h1>SSH-ing</h1>
-<h2 id="Step-1-Step-up-ssh-from-remote-laptops-e-g-mac-windows-to-Ubuntu-within-LAN">Step 1: Step up ssh from remote laptops (e.g. mac/windows) to Ubuntu <em>within LAN</em></h2>
+<h3 id="Step-1-Step-up-ssh-from-remote-laptops-e-g-mac-windows-to-Ubuntu-within-LAN">Step 1: Step up ssh from remote laptops (e.g. mac/windows) to Ubuntu <em>within LAN</em></h3>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Wlmne44M6fQ&amp;t=1s">How to enable SSH on Linux Ubuntu (Easy step by step guide)</a></p>
-<h2 id="Step-2-Step-up-ssh-port-forwarding-to-connect-from-any-network-through-remote-laptops-e-g-mac-windows-to-Ubuntu">Step 2: Step up ssh port forwarding to connect from any network through remote laptops (e.g. mac/windows) to Ubuntu</h2>
+<h3 id="Step-2-Step-up-ssh-port-forwarding-to-connect-from-any-network-through-remote-laptops-e-g-mac-windows-to-Ubuntu">Step 2: Step up ssh port forwarding to connect from any network through remote laptops (e.g. mac/windows) to Ubuntu</h3>
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/zvideo/1621515254902521856">windows 系统如何通过 ssh 远程连接 linux？ - 知乎</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cpolar.com/">cpolar - 安全的内网穿透工具</a></p>
 <blockquote>
 <p>I used the free account that fulfills my personal usage and need. Works perfectly at the moment. There can be other cleaner approaches, but I haven’t find such one. Please send me a message if you found one.</p>
 </blockquote>
-<h2 id="Step-3-passwordless-login-instructions">Step 3: passwordless login instructions</h2>
+<h3 id="Step-3-passwordless-login-instructions">Step 3: passwordless login instructions</h3>
 <p><a target="_blank" rel="noopener" href="https://levelup.gitconnected.com/how-to-connect-without-password-using-ssh-passwordless-9b8963c828e8">How to connect without password using SSH (passwordless)</a></p>
 <div class="note note-secondary">
             <p>Thanks for reading, if you have any questions/suggestions, please leave a comment below.</p>
