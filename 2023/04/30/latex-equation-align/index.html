@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="CJI Blog">
 <meta property="og:description" content="latex equation align              Daily tip of new latex skills.            I was search for ways to align multiple parts of an equation, and found this post on stackexchange. The align environment is">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://charliejcj.github.io/source/img/latex0.png">
+<meta property="og:image" content="https://charliejcj.github.io/blog/blog/2023/04/30/latex-equation-align/latex0.png">
 <meta property="article:published_time" content="2023-05-01T04:41:15.000Z">
-<meta property="article:modified_time" content="2023-05-01T05:41:25.393Z">
+<meta property="article:modified_time" content="2023-05-08T00:36:18.648Z">
 <meta property="article:author" content="Charlie Cheng-Jie Ji">
 <meta property="article:tag" content="latex">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://charliejcj.github.io/source/img/latex0.png">
+<meta name="twitter:image" content="https://charliejcj.github.io/blog/blog/2023/04/30/latex-equation-align/latex0.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -328,7 +328,8 @@ a &amp;= b + c\\<br>
 $$</p>
 <p>To specify more than one point of alignment, use the <code>alignat</code> environment. The first argument is the number of points of alignment, and the second argument is the number of columns in the equation.</p>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs latex"><span class="hljs-keyword">\begin</span>&#123;alignat*&#125;&#123;3&#125;<br><span class="hljs-built_in">&amp;</span> m   <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> <span class="hljs-keyword">\text</span>&#123;módulo&#125;            <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> m&gt;0<span class="hljs-keyword">\\</span><br><span class="hljs-built_in">&amp;</span> a   <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> <span class="hljs-keyword">\text</span>&#123;multiplicador&#125;     <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> 0&lt;a&lt;m<span class="hljs-keyword">\\</span><br><span class="hljs-built_in">&amp;</span> c   <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> <span class="hljs-keyword">\text</span>&#123;constante aditiva&#125; <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> 0<span class="hljs-keyword">\leq</span> c&lt;m<span class="hljs-keyword">\\</span><br><span class="hljs-built_in">&amp;</span> x<span class="hljs-built_in">_</span>0 <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> <span class="hljs-keyword">\text</span>&#123;valor inicial&#125;     <span class="hljs-keyword">\quad</span> <span class="hljs-built_in">&amp;</span><span class="hljs-built_in">&amp;</span> 0<span class="hljs-keyword">\leq</span> x<span class="hljs-built_in">_</span>0 &lt;m<br><span class="hljs-keyword">\end</span>&#123;alignat*&#125;<br></code></pre></td></tr></table></figure>
-<p><img src="/source/img/latex0.png" srcset="/blog/img/loading.gif" lazyload alt=""></p>
+<p><img src="/blog/blog/2023/04/30/latex-equation-align/latex0.png" srcset="/blog/img/loading.gif" lazyload alt="sourceimg"></p>
+
 <p>Additionally, there’s a discussion of what’s the difference between <code>&amp;</code> and <code>&amp;&amp;</code> in this thread, feel free to checkout this for more information!</p>
 <p><a target="_blank" rel="noopener" href="https://tex.stackexchange.com/questions/159723/what-does-a-double-ampersand-mean-in-latex">What does a double ampersand (&amp;&amp;) mean in LaTeX?</a></p>
 <div class="note note-secondary">
