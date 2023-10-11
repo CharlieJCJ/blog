@@ -2,7 +2,9 @@
 title: new post
 date: 2023-04-23 01:57:39
 tags: test
-hide: true
+hidden: true
+toc: true
+
 ---
 
 # H1

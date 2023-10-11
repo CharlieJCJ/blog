@@ -2,12 +2,14 @@
 title: template post with syntax
 date: 2023-04-21 23:09:57
 tags:
+description: This is a page that showcases all the syntax that are supported by fluid and hexo.
+toc: true
 ---
 
-{% note primary%}
+{% raw %}<article class="message is-info"><div class="message-body">{% endraw %}
 [Source](https://hexo.fluid-dev.com/docs/guide/)
 This is a page that showcases all the syntax that are supported by fluid and hexo.
-{% endnote %}
+{% raw %}</div></article>{% endraw %}
 
 # Index image in home page
 
@@ -21,6 +23,7 @@ date: 2019-10-10 10:00:00
 
 以下是文章内容
 ```
+<!--more-->
 
 # Codeblocks
 
@@ -41,18 +44,6 @@ $$
 [^1]: Links: [Source](https://mermaid-js.github.io/mermaid/#/); [Github](https://github.com/mermaid-js/mermaid)
 
 ## Gannt diagram
-
-{% mermaid %}
-gantt
-dateFormat YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-
-section A section
-Completed task :done, des1, 2014-01-06,2014-01-08
-Active task :active, des2, 2014-01-09, 3d
-Future task : des3, after des2, 5d
-Future task2 : des4, after des3, 5d
-{% endmermaid %}
 
 ## classDiagram
 

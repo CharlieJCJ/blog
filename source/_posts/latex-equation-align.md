@@ -1,18 +1,22 @@
 ---
-title: latex equation align
+title: Latex aligning equations
 date: 2023-04-30 21:41:15
 tags: latex
+description: Daily tip of new latex skills.
+toc: true
 ---
+
 
 # latex equation align
 
-{% note primary%}
+{% raw %}<article class="message is-info"><div class="message-body">{% endraw %}
 Daily tip of new latex skills.
-{% endnote %}
+{% raw %}</div></article>{% endraw %}
 
 I was search for ways to align multiple parts of an equation, and found this [post](https://tex.stackexchange.com/questions/49014/aligning-equations-with-text-with-alignat) on stackexchange.
 
 The `align` environment is the vanilla way to align equations, and the `&` symbol is used to specify the point of alignment.
+<!--more-->
 
 ```latex
 \begin{align}
@@ -39,12 +43,12 @@ To specify more than one point of alignment, use the `alignat` environment. The 
 \end{alignat*}
 ```
 
-![](/source/img/latex0.png)
+![latex.png](https://s2.loli.net/2023/05/08/uw4kp26UsrPRieX.png)
 
 Additionally, there's a discussion of what's the difference between `&` and `&&` in this thread, feel free to checkout this for more information!
 
 [What does a double ampersand (&&) mean in LaTeX?](https://tex.stackexchange.com/questions/159723/what-does-a-double-ampersand-mean-in-latex)
 
-{% note secondary %}
+{% raw %}<article class="message is-info"><div class="message-body">{% endraw %}
 Thanks for reading, if you have any questions/suggestions, please leave a comment below.
-{% endnote %}
+{% raw %}</div></article>{% endraw %}
