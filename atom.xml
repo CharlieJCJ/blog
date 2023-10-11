@@ -6,7 +6,7 @@
   <link href="https://charliejcj.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://charliejcj.github.io/blog/"/>
-  <updated>2023-06-10T13:29:25.344Z</updated>
+  <updated>2023-10-11T21:55:05.120Z</updated>
   <id>https://charliejcj.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>visual-studio-align-words-tricks</title>
+    <link href="https://charliejcj.github.io/blog/2023/10/11/visual-studio-align-words-tricks/"/>
+    <id>https://charliejcj.github.io/blog/2023/10/11/visual-studio-align-words-tricks/</id>
+    <published>2023-10-11T21:53:15.000Z</published>
+    <updated>2023-10-11T21:55:05.120Z</updated>
+    
+    
+    <summary type="html">To align your work with wrapping text around, Use Alt-Z in Visual Studio</summary>
+    
+    
+    
+    
+    <category term="misc" scheme="https://charliejcj.github.io/blog/tags/misc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jekyll setup ubuntu alfolio</title>
+    <link href="https://charliejcj.github.io/blog/2023/07/18/jekyll-setup-ubuntu-alfolio/"/>
+    <id>https://charliejcj.github.io/blog/2023/07/18/jekyll-setup-ubuntu-alfolio/</id>
+    <published>2023-07-18T07:30:29.000Z</published>
+    <updated>2023-07-17T16:30:29.916Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>科目一 ｜ 上海</title>
@@ -86,8 +116,8 @@
   
   <entry>
     <title>Build a deep-learning workstation</title>
-    <link href="https://charliejcj.github.io/blog/2023/04/23/deep-learning-workstation/"/>
-    <id>https://charliejcj.github.io/blog/2023/04/23/deep-learning-workstation/</id>
+    <link href="https://charliejcj.github.io/blog/2023/04/22/deep-learning-workstation/"/>
+    <id>https://charliejcj.github.io/blog/2023/04/22/deep-learning-workstation/</id>
     <published>2023-04-22T18:37:34.000Z</published>
     <updated>2023-06-10T13:22:41.545Z</updated>
     
