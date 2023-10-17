@@ -6,7 +6,7 @@
   <link href="https://charliejcj.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://charliejcj.github.io/blog/"/>
-  <updated>2023-10-11T21:55:05.120Z</updated>
+  <updated>2023-10-17T07:44:36.369Z</updated>
   <id>https://charliejcj.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FIX: nvidia-smi not found</title>
+    <link href="https://charliejcj.github.io/blog/2023/10/17/FIX-nvidia-smi-not-found/"/>
+    <id>https://charliejcj.github.io/blog/2023/10/17/FIX-nvidia-smi-not-found/</id>
+    <published>2023-10-17T07:40:53.000Z</published>
+    <updated>2023-10-17T07:44:36.369Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;article class=&quot;message is-info&quot;&gt;&lt;div class=&quot;message-body&quot;&gt;
+&lt;p&gt;This blog documents a strange thing that strikes me, and how I fixed</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>visual-studio-align-words-tricks</title>
