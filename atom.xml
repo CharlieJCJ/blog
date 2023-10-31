@@ -6,7 +6,7 @@
   <link href="https://charliejcj.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://charliejcj.github.io/blog/"/>
-  <updated>2023-10-17T20:11:59.092Z</updated>
+  <updated>2023-10-31T20:07:10.922Z</updated>
   <id>https://charliejcj.github.io/blog/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>FIX: nvidia-smi not found</title>
+    <title>Fix: Configuring VSCode to work with Minted (LaTeX), Conflict packages</title>
+    <link href="https://charliejcj.github.io/blog/2023/10/31/FIX-Configuring-VSCode-to-work-with-Minted-LaTeX-Conflict-packages/"/>
+    <id>https://charliejcj.github.io/blog/2023/10/31/FIX-Configuring-VSCode-to-work-with-Minted-LaTeX-Conflict-packages/</id>
+    <published>2023-10-31T20:02:32.000Z</published>
+    <updated>2023-10-31T20:07:10.922Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;article class=&quot;message is-info&quot;&gt;&lt;div class=&quot;message-body&quot;&gt;
+&lt;p&gt;This blog documents a latex fix for users who are using VSCode and Minted</summary>
+        
+      
+    
+    
+    
+    
+    <category term="latex vscode" scheme="https://charliejcj.github.io/blog/tags/latex-vscode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fix: command nvidia-smi not found on my linux machine</title>
     <link href="https://charliejcj.github.io/blog/2023/10/17/FIX-nvidia-smi-not-found/"/>
     <id>https://charliejcj.github.io/blog/2023/10/17/FIX-nvidia-smi-not-found/</id>
     <published>2023-10-17T07:40:53.000Z</published>
-    <updated>2023-10-17T20:11:59.092Z</updated>
+    <updated>2023-10-31T20:06:17.906Z</updated>
     
     
       
